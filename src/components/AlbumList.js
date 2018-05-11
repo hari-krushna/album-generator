@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { Text, ScrollView } from 'react-native';
 import AlbumDetail from './AlbumDetail';
 
 
@@ -34,9 +34,9 @@ class AlbumList extends Component {
     render() {
         console.log('albums', this.renderAlbums());
         return (
-            <View>
+            <ScrollView>
             {this.renderAlbums()}
-            </View>
+            </ScrollView>
         );
     }
 }
